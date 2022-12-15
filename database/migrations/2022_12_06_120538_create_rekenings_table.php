@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('rekenings', function (Blueprint $table) {
-            $table->id();
+            
             $table->bigInteger('id_pegawai')
             ->unsigned();
             $table->string('nomorrekening')->unique();
